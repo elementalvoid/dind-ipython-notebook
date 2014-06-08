@@ -6,7 +6,7 @@ Maintainer Matt Klich, Mike Risse
 
 RUN apt-get update; \
   DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install --yes \
-    git wget build-essential python-dev ipython ipython-notebook python-pip \
+    git wget build-essential python-dev ipython ipython-notebook python-pip; \
   pip install docker-py
 
 ADD ./notebook/ /tmp/notebook/
